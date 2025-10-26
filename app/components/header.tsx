@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Flame } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,16 +29,19 @@ const Header = () => {
 				<div className="flex justify-between items-center py-4">
 					{/* Logo */}
 					<Link href="/" className="flex items-center space-x-2">
-						<div className="bg-aviation-orange p-2 rounded-lg">
-							<Flame className="h-8 w-8 text-white" />
+						<div className="bg-color-aviation-light">
+							<Image
+								src={"/logo2.png"}
+								height={100}
+								width={100}
+								alt=""
+							/>
 						</div>
 						<div>
-							<h1 className="text-xl font-bold text-aviation-blue">
-								Aviation Fire Association
+							<h1 className="text-xl font-bold text-aviation-blue flex flex-col items-center">
+								<p>Nigerian Aviation Fire & Safety</p>
+								<p>Association</p>
 							</h1>
-							<p className="text-xs text-aviation-gray">
-								Professional Fire Safety
-							</p>
 						</div>
 					</Link>
 

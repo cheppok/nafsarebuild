@@ -15,7 +15,7 @@ export default function Home() {
 	return (
 		<div>
 			{/* Hero Section */}
-			<section className="relative bg-gradient-to-br from-aviation-blue to-blue-800 text-white overflow-hidden">
+			{/* <section className="relative bg-linear-to-br from-aviation-blue to-blue-800 text-white overflow-hidden">
 				<div className="absolute inset-0 bg-black opacity-20"></div>
 				<div className="relative container-custom section-padding">
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -81,6 +81,103 @@ export default function Home() {
 										</div>
 										<h3 className="text-2xl font-bold">
 											1000+
+										</h3>
+										<p className="text-blue-200">
+											Aircraft Protected
+										</p>
+									</div>
+									<div className="text-center">
+										<div className="bg-aviation-orange p-3 rounded-full w-fit mx-auto mb-3">
+											<AlertTriangle className="h-8 w-8" />
+										</div>
+										<h3 className="text-2xl font-bold">
+											24/7
+										</h3>
+										<p className="text-blue-200">
+											Emergency Support
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> */}
+			{/* Hero Section */}
+			<section
+				className="relative bg-cover bg-center bg-no-repeat text-white overflow-hidden"
+				style={{
+					backgroundImage: "url('/train2.jpg')", // replace with your actual image path
+				}}
+			>
+				{/* Overlay for readability */}
+				<div className="absolute inset-0 bg-black/50"></div>
+
+				<div className="relative container-custom section-padding">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+						<div>
+							<h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+								Leading Aviation{" "}
+								<span className="text-aviation-orange">
+									Fire Safety
+								</span>{" "}
+								Excellence
+							</h1>
+							<p className="text-xl mb-8 text-blue-100 leading-relaxed">
+								Professional training, certification, and
+								resources for aviation fire safety professionals
+								in Nigeria. The premier association dedicated to
+								protecting lives and aircraft.
+							</p>
+							<div className="flex flex-col sm:flex-row gap-4">
+								<Link
+									href="/training"
+									className="btn-primary inline-flex items-center"
+								>
+									Start Training{" "}
+									<ArrowRight className="ml-2 h-5 w-5" />
+								</Link>
+								<Link
+									href="/executives"
+									className="btn-secondary inline-flex items-center"
+								>
+									Meet Our Executives{" "}
+									<Users className="ml-2 h-5 w-5" />
+								</Link>
+							</div>
+						</div>
+
+						<div className="relative">
+							<div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+								<div className="grid grid-cols-2 gap-6">
+									<div className="text-center">
+										<div className="bg-aviation-orange p-3 rounded-full w-fit mx-auto mb-3">
+											<Shield className="h-8 w-8" />
+										</div>
+										<h3 className="text-2xl font-bold">
+											500+
+										</h3>
+										<p className="text-blue-200">
+											Certified Members
+										</p>
+									</div>
+									<div className="text-center">
+										<div className="bg-aviation-orange p-3 rounded-full w-fit mx-auto mb-3">
+											<Award className="h-8 w-8" />
+										</div>
+										<h3 className="text-2xl font-bold">
+											35+
+										</h3>
+										<p className="text-blue-200">
+											Years Experience
+										</p>
+									</div>
+									<div className="text-center">
+										<div className="bg-aviation-orange p-3 rounded-full w-fit mx-auto mb-3">
+											<Plane className="h-8 w-8" />
+										</div>
+										<h3 className="text-2xl font-bold">
+											100000+
 										</h3>
 										<p className="text-blue-200">
 											Aircraft Protected
@@ -184,7 +281,8 @@ export default function Home() {
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 						<div>
 							<h2 className="text-3xl lg:text-4xl font-bold text-aviation-blue mb-6">
-								Why Choose Aviation Fire Association?
+								Why Choose Nigerian Aviation Fire & Safety
+								Association?
 							</h2>
 							<div className="space-y-4">
 								<div className="flex items-start space-x-3">
@@ -194,7 +292,7 @@ export default function Home() {
 											Industry Expertise
 										</h4>
 										<p className="text-aviation-gray">
-											Over 15 years of specialized
+											Over 35 years of specialized
 											aviation fire safety experience
 										</p>
 									</div>
@@ -206,7 +304,7 @@ export default function Home() {
 											Certified Professionals
 										</h4>
 										<p className="text-aviation-gray">
-											Learn from our network of 500+
+											Learn from our network of 1000+
 											certified members
 										</p>
 									</div>
