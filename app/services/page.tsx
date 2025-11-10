@@ -4,16 +4,47 @@ import {
 	Users,
 	Award,
 	CheckCircle,
-	AlertTriangle,
 	BookOpen,
 	Wrench,
 	Phone,
+	Handshake,
+	GraduationCap,
 } from "lucide-react";
 
 export default function ServicesPage() {
 	const services = [
 		{
-			icon: Shield,
+			icon: Handshake,
+			title: "Welfare & Support",
+			description:
+				"Advocate for better welfare of firemen, handles every work related legal battles of members.",
+			features: [
+				"Welfare Advocacy",
+				"Medical support",
+				"Educational Support",
+				"Legal Representation",
+				"Retiremeny Benefits",
+			],
+			cta: "Welfare Enquiry",
+			link: "/contact",
+		},
+		{
+			icon: Award,
+			title: "Professional Recognition",
+			description:
+				"Programs to recognize excellence and achievements in fire safety and emergency services.",
+			features: [
+				"Retirement Award",
+				"Annual Awards",
+				"Hero Recognition",
+				"Excellence Certifications",
+				"Achievement Badges",
+			],
+			cta: "Award enquiry",
+			link: "/contact",
+		},
+		{
+			icon: GraduationCap,
 			title: "Professional Training Programs",
 			description:
 				"Comprehensive certification courses for all levels of aviation fire safety professionals.",
@@ -29,34 +60,20 @@ export default function ServicesPage() {
 		},
 		{
 			icon: Users,
-			title: "Expert Consultation Services",
+			title: "Networking & Events",
 			description:
-				"Professional guidance from our certified members and industry experts.",
+				"Connect with fellow professionals through conferences, seminars, and networking events.",
 			features: [
-				"Safety Program Development",
-				"Risk Assessment & Analysis",
-				"Compliance Auditing",
-				"Emergency Planning",
-				"Custom Training Development",
+				"Annual Conference",
+				"Regional Meetings",
+				"Professional Seminars",
+				"Professional Workshops",
+				"Online Community",
 			],
 			cta: "Get Consultation",
 			link: "/contact",
 		},
-		{
-			icon: Award,
-			title: "Certification & Accreditation",
-			description:
-				"Industry-recognized certifications that advance your career in aviation fire safety.",
-			features: [
-				"Individual Professional Certification",
-				"Organizational Accreditation",
-				"Continuing Education Units",
-				"Skills Assessment",
-				"Career Development Pathways",
-			],
-			cta: "Get Certified",
-			link: "/training",
-		},
+
 		{
 			icon: Wrench,
 			title: "Equipment Evaluation & Testing",
@@ -87,37 +104,21 @@ export default function ServicesPage() {
 			cta: "View Standards",
 			link: "/resources",
 		},
-		{
-			icon: AlertTriangle,
-			title: "Emergency Response Support",
-			description:
-				"24/7 emergency support and incident response coordination.",
-			features: [
-				"24/7 Emergency Hotline",
-				"Incident Response Planning",
-				"Crisis Management Support",
-				"Technical Advisory Services",
-				"Post-Incident Analysis",
-			],
-			cta: "Emergency Support",
-			link: "/contact",
-		},
 	];
 
 	return (
 		<div className="min-h-screen bg-gray-50">
 			{/* Hero Section */}
-			<section className="bg-gradient-to-br from-aviation-blue to-blue-800 text-white section-padding">
+			<section className="bg-linear-to-br from-aviation-blue to-blue-800 text-white section-padding">
 				<div className="container-custom">
 					<div className="text-center mb-12">
 						<h1 className="text-4xl lg:text-5xl font-bold mb-6">
 							Our Services
 						</h1>
 						<p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-							Comprehensive aviation fire safety solutions
-							designed to meet the evolving needs of airports,
-							airlines, and emergency response organizations
-							worldwide.
+							NAFSA provides comprehensive services to support
+							firefighters, fire departments, and fire safety
+							professionals throughout their careers.
 						</p>
 					</div>
 
@@ -130,9 +131,9 @@ export default function ServicesPage() {
 						</div>
 						<div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
 							<Users className="h-8 w-8 text-aviation-orange mx-auto mb-3" />
-							<h3 className="text-2xl font-bold">100+</h3>
+							<h3 className="text-2xl font-bold">20+</h3>
 							<p className="text-blue-200">
-								Organizations Served
+								Airports Served Airports Served
 							</p>
 						</div>
 						<div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
@@ -163,10 +164,10 @@ export default function ServicesPage() {
 									className="card p-8 hover:shadow-xl transition-shadow duration-300"
 								>
 									<div className="flex items-start space-x-4 mb-6">
-										<div className="bg-aviation-orange/10 p-3 rounded-lg flex-shrink-0">
+										<div className="bg-aviation-orange/10 p-3 rounded-lg shrink-0">
 											<IconComponent className="h-8 w-8 text-aviation-orange" />
 										</div>
-										<div className="flex-grow">
+										<div className="grow">
 											<h3 className="text-2xl font-bold text-aviation-blue mb-3">
 												{service.title}
 											</h3>
@@ -230,8 +231,8 @@ export default function ServicesPage() {
 								Assessment
 							</h3>
 							<p className="text-aviation-gray text-sm">
-								We assess your current needs and develop a
-								customized solution plan
+								We assess the current needs of our members and
+								develop a customized solution plan
 							</p>
 						</div>
 
@@ -244,7 +245,8 @@ export default function ServicesPage() {
 							</h3>
 							<p className="text-aviation-gray text-sm">
 								Our experts create a detailed implementation
-								strategy tailored to your organization
+								strategy tailored to our members and our
+								organization
 							</p>
 						</div>
 

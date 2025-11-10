@@ -1,12 +1,11 @@
 import Link from "next/link";
 import {
-	Clock,
 	Users,
 	Award,
 	BookOpen,
 	CheckCircle,
 	Star,
-	Calendar,
+	ArrowRight,
 } from "lucide-react";
 
 export default function TrainingPage() {
@@ -14,9 +13,7 @@ export default function TrainingPage() {
 		{
 			title: "Basic ARFF Certification",
 			level: "Beginner",
-			duration: "40 hours",
-			format: "In-person & Online",
-			price: "$899",
+
 			description:
 				"Fundamental aircraft rescue and firefighting training for new professionals entering the aviation fire safety field.",
 			features: [
@@ -27,15 +24,11 @@ export default function TrainingPage() {
 				"Hands-on simulation exercises",
 			],
 			prerequisites: "None",
-			certification: "ARFF Basic Certification",
-			nextStart: "January 15, 2024",
 		},
 		{
 			title: "Advanced Emergency Response",
 			level: "Intermediate",
-			duration: "60 hours",
-			format: "In-person",
-			price: "$1,299",
+
 			description:
 				"Advanced training for experienced professionals seeking to enhance their emergency response capabilities.",
 			features: [
@@ -46,15 +39,11 @@ export default function TrainingPage() {
 				"Leadership in emergency situations",
 			],
 			prerequisites: "Basic ARFF Certification",
-			certification: "Advanced ARFF Certification",
-			nextStart: "February 1, 2024",
 		},
 		{
 			title: "ARFF Instructor Development",
 			level: "Advanced",
-			duration: "80 hours",
-			format: "In-person",
-			price: "$1,799",
+
 			description:
 				"Comprehensive program designed to train qualified instructors for aviation fire safety training programs.",
 			features: [
@@ -65,15 +54,11 @@ export default function TrainingPage() {
 				"Simulation training management",
 			],
 			prerequisites: "Advanced ARFF Certification + 3 years experience",
-			certification: "Certified ARFF Instructor",
-			nextStart: "March 1, 2024",
 		},
 		{
 			title: "Hazmat Response Specialist",
 			level: "Intermediate",
-			duration: "32 hours",
-			format: "In-person & Online",
-			price: "$749",
+
 			description:
 				"Specialized training for handling hazardous materials incidents in aviation environments.",
 			features: [
@@ -84,15 +69,11 @@ export default function TrainingPage() {
 				"Regulatory compliance",
 			],
 			prerequisites: "Basic ARFF Certification",
-			certification: "Hazmat Response Specialist",
-			nextStart: "January 22, 2024",
 		},
 		{
 			title: "Safety Management Systems",
 			level: "Management",
-			duration: "24 hours",
-			format: "Online",
-			price: "$599",
+
 			description:
 				"Comprehensive training on implementing and managing safety management systems in aviation organizations.",
 			features: [
@@ -103,15 +84,11 @@ export default function TrainingPage() {
 				"Continuous improvement processes",
 			],
 			prerequisites: "Management experience recommended",
-			certification: "SMS Manager Certification",
-			nextStart: "Available anytime",
 		},
 		{
 			title: "Recertification Program",
 			level: "All Levels",
-			duration: "16 hours",
-			format: "Online & In-person",
-			price: "$399",
+
 			description:
 				"Required continuing education to maintain your aviation fire safety certifications.",
 			features: [
@@ -122,8 +99,6 @@ export default function TrainingPage() {
 				"Skills assessment",
 			],
 			prerequisites: "Valid certification requiring renewal",
-			certification: "Certification Renewal",
-			nextStart: "Multiple dates available",
 		},
 	];
 
@@ -145,7 +120,7 @@ export default function TrainingPage() {
 	return (
 		<div className="min-h-screen bg-gray-50">
 			{/* Hero Section */}
-			<section className="bg-gradient-to-br from-aviation-blue to-blue-800 text-white section-padding">
+			<section className="bg-linear-to-br from-aviation-blue to-blue-800 text-white section-padding">
 				<div className="container-custom">
 					<div className="text-center mb-12">
 						<h1 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -183,6 +158,21 @@ export default function TrainingPage() {
 						</div>
 					</div>
 				</div>
+				<div className=" mt-4 flex flex-col sm:flex-row gap-4">
+					<Link
+						href="/resources"
+						className="btn-primary inline-flex items-center"
+					>
+						Training Materials{" "}
+						<ArrowRight className="ml-2 h-5 w-5" />
+					</Link>
+					<Link
+						href="/executives"
+						className="btn-secondary inline-flex items-center"
+					>
+						Meet Our Executives <Users className="ml-2 h-5 w-5" />
+					</Link>
+				</div>
 			</section>
 
 			{/* Programs Grid */}
@@ -206,7 +196,7 @@ export default function TrainingPage() {
 							>
 								{/* Header */}
 								<div className="flex items-start justify-between mb-6">
-									<div className="flex-grow">
+									<div className="grow">
 										<div className="flex items-center space-x-3 mb-2">
 											<h3 className="text-2xl font-bold text-aviation-blue">
 												{program.title}
@@ -223,39 +213,6 @@ export default function TrainingPage() {
 											{program.description}
 										</p>
 									</div>
-									<div className="text-right ml-4">
-										<div className="text-2xl font-bold text-aviation-orange">
-											{program.price}
-										</div>
-									</div>
-								</div>
-
-								{/* Program Details */}
-								<div className="grid grid-cols-2 gap-4 mb-6 text-sm">
-									<div className="flex items-center space-x-2">
-										<Clock className="h-4 w-4 text-aviation-orange" />
-										<span className="text-aviation-gray">
-											{program.duration}
-										</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<Users className="h-4 w-4 text-aviation-orange" />
-										<span className="text-aviation-gray">
-											{program.format}
-										</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<Award className="h-4 w-4 text-aviation-orange" />
-										<span className="text-aviation-gray">
-											{program.certification}
-										</span>
-									</div>
-									<div className="flex items-center space-x-2">
-										<Calendar className="h-4 w-4 text-aviation-orange" />
-										<span className="text-aviation-gray">
-											{program.nextStart}
-										</span>
-									</div>
 								</div>
 
 								{/* Features */}
@@ -270,7 +227,7 @@ export default function TrainingPage() {
 													key={featureIndex}
 													className="flex items-start space-x-2 text-sm text-aviation-gray"
 												>
-													<CheckCircle className="h-4 w-4 text-aviation-orange flex-shrink-0 mt-0.5" />
+													<CheckCircle className="h-4 w-4 text-aviation-orange shrink-0 mt-0.5" />
 													<span>{feature}</span>
 												</li>
 											)
@@ -294,13 +251,7 @@ export default function TrainingPage() {
 										href="/contact"
 										className="btn-primary w-full text-center"
 									>
-										Enroll Now
-									</Link>
-									<Link
-										href="/contact"
-										className="block text-center text-aviation-blue hover:text-aviation-orange transition-colors text-sm"
-									>
-										Request More Information →
+										Request More Info
 									</Link>
 								</div>
 							</div>
@@ -331,7 +282,7 @@ export default function TrainingPage() {
 								Industry Recognition
 							</h3>
 							<p className="text-aviation-gray">
-								Our certifications are recognized and respected
+								Certifications that are recognized and respected
 								throughout the aviation industry
 							</p>
 						</div>
@@ -373,8 +324,8 @@ export default function TrainingPage() {
 					</h2>
 					<p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
 						Join thousands of aviation fire safety professionals who
-						have advanced their careers through our comprehensive
-						training programs.
+						have advanced their careers through various training
+						programs.
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Link href="/contact" className="btn-primary">

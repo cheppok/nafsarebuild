@@ -4,7 +4,6 @@ import {
 	Download,
 	BookOpen,
 	AlertCircle,
-	Shield,
 	Users,
 	ExternalLink,
 } from "lucide-react";
@@ -48,6 +47,29 @@ export default function ResourcesPage() {
 			description:
 				"Educational resources and training materials for instructors and students",
 			resources: [
+				{
+					title: "Aircraft Engine",
+					type: "Docx",
+					size: "2.2 MB",
+					description: "Aircraft Engine types, hazards and tactics",
+					downloadUrl: "/aamaterial/engine.docx ",
+				},
+				{
+					title: "Basic ARFF Training Curriculum",
+					type: "ZIP",
+					size: "45.3 MB",
+					description:
+						"Complete training package including presentations and exercises",
+					downloadUrl: "#",
+				},
+				{
+					title: "Basic ARFF Training Curriculum",
+					type: "ZIP",
+					size: "45.3 MB",
+					description:
+						"Complete training package including presentations and exercises",
+					downloadUrl: "#",
+				},
 				{
 					title: "Basic ARFF Training Curriculum",
 					type: "ZIP",
@@ -159,7 +181,7 @@ export default function ResourcesPage() {
 	return (
 		<div className="min-h-screen bg-gray-50">
 			{/* Hero Section */}
-			<section className="bg-gradient-to-br from-aviation-blue to-blue-800 text-white section-padding">
+			<section className="bg-linear-to-br from-aviation-blue to-blue-800 text-white section-padding">
 				<div className="container-custom">
 					<div className="text-center">
 						<h1 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -204,7 +226,7 @@ export default function ResourcesPage() {
 												className="card p-6 hover:shadow-xl transition-shadow duration-300"
 											>
 												<div className="flex items-start justify-between mb-4">
-													<div className="flex-grow">
+													<div className="grow">
 														<h3 className="text-lg font-semibold text-aviation-blue mb-2">
 															{resource.title}
 														</h3>

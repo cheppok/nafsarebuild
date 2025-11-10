@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Flame, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
 	return (
@@ -9,8 +11,13 @@ const Footer = () => {
 					{/* Company Info */}
 					<div>
 						<div className="flex items-center space-x-2 mb-4">
-							<div className="bg-aviation-orange p-2 rounded-lg">
-								<Flame className="h-6 w-6" />
+							<div className="">
+								<Image
+									src={"/logo2.png"}
+									height={100}
+									width={100}
+									alt=""
+								/>
 							</div>
 							<div>
 								<h3 className="text-lg font-bold">
@@ -143,7 +150,7 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className="border-t border-blue-600 mt-8 pt-8 text-center">
+				{/* <div className="border-t border-blue-600 mt-8 pt-8 text-center">
 					<p className="text-blue-200 text-sm">
 						© 2024 Aviation Fire Association. All rights reserved. |
 						<Link href="/privacy" className="hover:text-white ml-1">
@@ -154,6 +161,63 @@ const Footer = () => {
 							Terms of Service
 						</Link>
 					</p>
+				</div> */}
+				{/* Bottom Section */}
+				<div className="border-t border-border pt-8 mt-8">
+					<div className="flex flex-col items-center space-y-4 md:flex-row md:justify-between md:space-y-0">
+						<div className="text-sm text-center md:text-left">
+							© 2025 National Fire and Safety Association. All
+							rights reserved.
+						</div>
+
+						{/* Social Media */}
+						<div className="flex space-x-4">
+							<a
+								href="#"
+								aria-label="Facebook"
+								className="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+							>
+								<Facebook className="w-4 h-4" />
+							</a>
+							<a
+								href="#"
+								aria-label="Twitter"
+								className="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+							>
+								<Twitter className="w-4 h-4" />
+							</a>
+							<a
+								href="#"
+								aria-label="LinkedIn"
+								className="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+							>
+								<Linkedin className="w-4 h-4" />
+							</a>
+							<a
+								href="#"
+								aria-label="Instagram"
+								className="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+							>
+								<Instagram className="w-4 h-4" />
+							</a>
+						</div>
+
+						<div className="text-sm text-center md:text-right">
+							<Link
+								href={""}
+								className="hover:text-primary transition-colors"
+							>
+								Privacy Policy
+							</Link>
+							<span className="mx-2">•</span>
+							<Link
+								href={""}
+								className="hover:text-primary transition-colors"
+							>
+								Terms of Service
+							</Link>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>

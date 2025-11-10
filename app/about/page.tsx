@@ -13,14 +13,14 @@ export default function AboutPage() {
 	return (
 		<div className="min-h-screen bg-gray-50">
 			{/* Hero Section */}
-			<section className="bg-gradient-to-br from-aviation-blue to-blue-800 text-white section-padding">
+			<section className="bg-linear-to-br from-aviation-blue to-blue-800 text-white section-padding">
 				<div className="container-custom">
 					<div className="text-center mb-12">
 						<h1 className="text-4xl lg:text-5xl font-bold mb-6">
 							About Aviation Fire Association
 						</h1>
 						<p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-							For over 15 years, we have been the leading
+							For over 25 years, we have been the leading
 							authority in aviation fire safety, dedicated to
 							protecting lives, aircraft, and aviation
 							infrastructure worldwide.
@@ -41,10 +41,13 @@ export default function AboutPage() {
 								Our Mission
 							</h3>
 							<p className="text-aviation-gray leading-relaxed">
-								To advance aviation fire safety through
-								professional training, certification, and the
-								development of industry-leading standards and
-								best practices.
+								To enhance fire welfare, advance fire safety
+								through education, training, advocacy, and
+								support for firemen and safety professionals
+								nationwide. We are committed to reducing
+								fire-related injuries and deaths while
+								supporting those who dedicate their lives to
+								protecting others.
 							</p>
 						</div>
 
@@ -91,34 +94,51 @@ export default function AboutPage() {
 							</h2>
 							<div className="space-y-4 text-aviation-gray leading-relaxed">
 								<p>
-									Founded in 2009 by a group of dedicated
-									aviation fire safety professionals, the
-									Aviation Fire Association emerged from a
-									critical need for standardized training and
-									certification in the rapidly evolving
-									aviation industry.
+									The Nigerian Aviation Fire and Safety
+									Association(NAFSA) is a Professional
+									Association, an Independent Entity, a
+									Non-Governmental Agency(NGO), duly
+									registered for nearly three decades now,
+									with lofty aims and objectives among which
+									are upscaling and uplifting the standard of
+									Aviation Fire Service, Fire Protection and
+									Prevention in the Aviation Sector, majoring
+									on liaising with the relevant Aviation
+									Agencies, and rendering technical advice to
+									the relevant Aviation Agencies and
+									Authorities, as Gatekeepers of Safety in the
+									Aviation Sector. NAFSA has collaborations
+									with the Federal Ministry of Aviation and
+									Aerospace Development, FAAN, NCAA, NAMA,
+									NCAT and NSIB; with Professional
+									Associations like NATCA and NAAPE. As
+									Gatekeepers of Safety in the Aviation
+									Sector, we are mandated to liaise with
+									relevant Aviation Agencies and render
+									technical advice to ensure the highest
+									standards of safety and security.
 								</p>
 								<p>
 									What started as a small group of passionate
 									individuals has grown into a premier
-									organization with over 500 certified members
-									across the United States, representing
-									airports, airlines, emergency services, and
-									training institutions.
+									organization with over 1000 members across
+									Nigeria, representing airports, emergency
+									services, and training institutions.
 								</p>
 								<p>
 									Today, we continue to lead the industry
-									through innovative training programs,
-									cutting-edge research, and the development
-									of safety standards that protect millions of
-									passengers and aviation personnel worldwide.
+									through innovative training programs
+									initiatives, cutting-edge research, and the
+									development of safety standards that protect
+									millions of passengers and aviation
+									personnel nationwide.
 								</p>
 							</div>
 						</div>
 						<div className="grid grid-cols-2 gap-4">
 							<div className="bg-white p-6 rounded-lg shadow-lg">
 								<h4 className="text-3xl font-bold text-aviation-orange mb-2">
-									500+
+									1000+
 								</h4>
 								<p className="text-aviation-gray">
 									Certified Members
@@ -126,7 +146,7 @@ export default function AboutPage() {
 							</div>
 							<div className="bg-white p-6 rounded-lg shadow-lg">
 								<h4 className="text-3xl font-bold text-aviation-blue mb-2">
-									15+
+									25+
 								</h4>
 								<p className="text-aviation-gray">
 									Years of Excellence

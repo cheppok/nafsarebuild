@@ -1,113 +1,14 @@
 import Link from "next/link";
 // import Image from "next/image";
-import {
-	Shield,
-	Users,
-	Award,
-	ArrowRight,
-	CheckCircle,
-	// Flame,
-	Plane,
-	AlertTriangle,
-} from "lucide-react";
+import { Shield, Users, Award, ArrowRight, CheckCircle } from "lucide-react";
 
 export default function Home() {
 	return (
 		<div>
-			{/* Hero Section */}
-			{/* <section className="relative bg-linear-to-br from-aviation-blue to-blue-800 text-white overflow-hidden">
-				<div className="absolute inset-0 bg-black opacity-20"></div>
-				<div className="relative container-custom section-padding">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-						<div>
-							<h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-								Leading Aviation{" "}
-								<span className="text-aviation-orange">
-									Fire Safety
-								</span>{" "}
-								Excellence
-							</h1>
-							<p className="text-xl mb-8 text-blue-100 leading-relaxed">
-								Professional training, certification, and
-								resources for aviation fire safety professionals
-								worldwide. Join the premier association
-								dedicated to protecting lives and aircraft.
-							</p>
-							<div className="flex flex-col sm:flex-row gap-4">
-								<Link
-									href="/training"
-									className="btn-primary inline-flex items-center"
-								>
-									Start Training{" "}
-									<ArrowRight className="ml-2 h-5 w-5" />
-								</Link>
-								<Link
-									href="/members"
-									className="btn-secondary inline-flex items-center"
-								>
-									Meet Our Members{" "}
-									<Users className="ml-2 h-5 w-5" />
-								</Link>
-							</div>
-						</div>
-						<div className="relative">
-							<div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-								<div className="grid grid-cols-2 gap-6">
-									<div className="text-center">
-										<div className="bg-aviation-orange p-3 rounded-full w-fit mx-auto mb-3">
-											<Shield className="h-8 w-8" />
-										</div>
-										<h3 className="text-2xl font-bold">
-											500+
-										</h3>
-										<p className="text-blue-200">
-											Certified Members
-										</p>
-									</div>
-									<div className="text-center">
-										<div className="bg-aviation-orange p-3 rounded-full w-fit mx-auto mb-3">
-											<Award className="h-8 w-8" />
-										</div>
-										<h3 className="text-2xl font-bold">
-											15+
-										</h3>
-										<p className="text-blue-200">
-											Years Experience
-										</p>
-									</div>
-									<div className="text-center">
-										<div className="bg-aviation-orange p-3 rounded-full w-fit mx-auto mb-3">
-											<Plane className="h-8 w-8" />
-										</div>
-										<h3 className="text-2xl font-bold">
-											1000+
-										</h3>
-										<p className="text-blue-200">
-											Aircraft Protected
-										</p>
-									</div>
-									<div className="text-center">
-										<div className="bg-aviation-orange p-3 rounded-full w-fit mx-auto mb-3">
-											<AlertTriangle className="h-8 w-8" />
-										</div>
-										<h3 className="text-2xl font-bold">
-											24/7
-										</h3>
-										<p className="text-blue-200">
-											Emergency Support
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> */}
-			{/* Hero Section */}
 			<section
 				className="relative bg-cover bg-center bg-no-repeat text-white overflow-hidden"
 				style={{
-					backgroundImage: "url('/train2.jpg')", // replace with your actual image path
+					backgroundImage: "url('/train2.jpg')",
 				}}
 			>
 				{/* Overlay for readability */}
@@ -131,10 +32,10 @@ export default function Home() {
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4">
 								<Link
-									href="/training"
+									href="/engagement"
 									className="btn-primary inline-flex items-center"
 								>
-									Start Training{" "}
+									NAFSA Engagements{" "}
 									<ArrowRight className="ml-2 h-5 w-5" />
 								</Link>
 								<Link
@@ -147,7 +48,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="relative">
+						{/* <div className="relative ">
 							<div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
 								<div className="grid grid-cols-2 gap-6">
 									<div className="text-center">
@@ -155,7 +56,7 @@ export default function Home() {
 											<Shield className="h-8 w-8" />
 										</div>
 										<h3 className="text-2xl font-bold">
-											500+
+											1000+
 										</h3>
 										<p className="text-blue-200">
 											Certified Members
@@ -196,10 +97,17 @@ export default function Home() {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>
+			<div className=" bg-slate-300 h-40 md:h-60 w-full shadow-xl text-3xl md:text-5xl flex justify-center items-center gap-4">
+				<h1 className="">Motto: </h1>
+				{/* <h2 className="flash-text ">Team Spirit</h2> */}
+				<h2 className="flash-text text-green-800 animate-pulse drop-shadow-lg scale-105">
+					Team Spirit
+				</h2>
+			</div>
 
 			{/* Services Preview */}
 			<section className="section-padding bg-white">
@@ -286,13 +194,13 @@ export default function Home() {
 							</h2>
 							<div className="space-y-4">
 								<div className="flex items-start space-x-3">
-									<CheckCircle className="h-6 w-6 text-aviation-orange mt-1 flex-shrink-0" />
+									<CheckCircle className="h-6 w-6 text-aviation-orange mt-1 shrink-0" />
 									<div>
 										<h4 className="font-semibold text-aviation-blue">
 											Industry Expertise
 										</h4>
 										<p className="text-aviation-gray">
-											Over 35 years of specialized
+											Over 25 years of specialized
 											aviation fire safety experience
 										</p>
 									</div>
